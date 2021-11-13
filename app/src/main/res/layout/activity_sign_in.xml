@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignInActivity"
+    android:backgroundTint="@android:color/darker_gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_whatsapp_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In "
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/edt_sign_in_email"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:hint="  Email Id"
+        android:focusableInTouchMode="true"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/edt_sign_in_password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:hint="  Password"
+        android:focusableInTouchMode="true"
+        android:maxLines="1"
+        android:scrollbars="horizontal"
+        android:imeOptions="actionDone"/>
+
+    <TextView
+        android:id="@+id/tv_sign_in_new_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:text="New UserRegistration ?"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/whatsapp_color_primary"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        android:background="#0D584F"
+        android:text="Sign In"
+        android:ellipsize="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btn_sign_in_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ic_google_logo"
+            android:text="Google"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btn_sign_in_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/facebook_color"
+            android:drawableLeft="@drawable/ic_facebook_logo"
+            android:text="Facebook"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tv_sign_in_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:text="Sign In with Phone"
+        android:textAlignment="center"
+        android:textColor="@color/whatsapp_color_primary"
+        android:textSize="18sp" />
+
+</LinearLayout>

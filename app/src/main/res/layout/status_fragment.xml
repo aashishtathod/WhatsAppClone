@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:viewBindingIgnore="false"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/sample_status_item"
+        android:id="@+id/add_status"
+        />
+
+    <TextView
+        android:text="Recent Updates"
+        android:textSize="15dp"
+        android:layout_margin="3dp"
+        android:padding="6dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/status_frag_RV"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/sample_status_item"/>
+
+</LinearLayout>
